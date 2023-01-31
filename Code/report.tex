@@ -1,0 +1,53 @@
+\documentclass{amsart}
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+\begin{document}
+%
+%=================================================================
+%
+\title[A Short Running Title]{Predict Whether or not A Passenger Survived the Inking of the Synthanic}%
+
+\author{Jinzhu Liu}
+\address[A.~1]{Nanjing University of Science and Technology, China}%
+\email[A.~1]{jinz_liu@njust.edu.cn}
+
+%\thanks{Thanks to \ldots}%
+\date{\gitAuthorDate}%
+
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{./tex/mainbody}
+
+% ----------------------------------------------------------------
+\newpage
+%=================================================================
+
+\listoftodos
+
+\end{document}
+
